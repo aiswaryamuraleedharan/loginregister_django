@@ -1,0 +1,15 @@
+{% extends 'main.html' %}   
+
+    {% block content %}
+
+        <h2>Register Page</h2>
+
+        <div class='text-center'>
+            <form method ='POST'>
+                {% csrf_token %}
+                {{form}}    
+                <input type='submit'>
+            </form>
+        </div>
+
+{% endblock %}
